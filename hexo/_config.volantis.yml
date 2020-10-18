@@ -1,0 +1,125 @@
+navbar:
+  logo: # choose [img] or [icon + title]
+    img:
+    icon:
+    title:
+  menu:
+    # The following can be written in `blog/source/_data/menu.yml`
+    - name: 博客
+      icon: fas fa-rss
+      url: /
+    - name: 分类
+      icon: fas fa-folder-open
+      url: categories/
+    - name: 标签
+      icon: fas fa-tags
+      url: tags/
+    - name: 归档
+      icon: fas fa-archive
+      url: archives/
+    - name: 友链
+      icon: fas fa-link
+      url: friends/
+    - name: 关于shanzj
+      icon: fas fa-info-circle
+      url: about/
+  search: 搜索   # Search bar placeholder
+  
+site_footer:
+  # layout of footer: [aplayer, social, license, info, copyright]
+  layout: [aplayer, social, license, info, copyright]
+  social:
+    - icon: fas fa-rss
+      url: atom.xml
+    - icon: fas fa-envelope
+      url: mailto:gvssimux@gmail.com
+    - icon: fab fa-github
+      url: https://github.com/Shanzj-gvs
+    - icon: fas fa-headphones-alt
+      url: https://music.163.com/#/song?id=28258466
+  copyright: 'Copyright © 2017-2020 Gvssimux'
+  # You can add your own property here. (Support markdown, for example: br: '<br>')
+  br: '<br>'
+  
+   
+############################### Cover ############################### > start
+cover:
+  height_scheme: full # full, half
+  layout_scheme: dock # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
+  display:
+    home: true
+    archive: true
+    others: false # can be written in front-matter 'cover: true'
+  background: http://cdn.gvssimux.com/%E8%8A%B1.jpg
+  logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
+  title: 'Shanzj'blog gvssimux'
+  subtitle: ''
+  search: A Wonderful Theme for Hexo # search bar placeholder
+  features:
+    - name: 单子健
+      icon: #
+      img: http://cdn.gvssimux.com/touxiang.jpg
+      url: /
+    - name: 分类
+      icon: #
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      url: /categories/
+    - name: 标签
+      icon: #
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      url: /tags/
+    - name: 归档
+      icon: #
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
+      url: /archives/
+    - name: 友链
+      icon: #
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      url: https://github.com/volantis-x/hexo-theme-volantis/
+    - name: 关于
+      icon: #
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      url: #
+
+
+############################### Cover ############################### > start
+cover:
+  height_scheme: full # full, half
+  layout_scheme: dock # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)
+  display:
+    home: true
+    archive: true
+    others: false # can be written in front-matter 'cover: true'
+  background: http://cdn.gvssimux.com/%E8%8A%B1.jpg
+  logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
+  title: 'Shanzj'blog gvssimux'
+  subtitle: ''
+  search: A Wonderful Theme for Hexo # search bar placeholder
+  features:
+    - name: 单子健
+      icon: #
+      img: http://cdn.gvssimux.com/touxiang.jpg
+      url: /
+    - name: 分类
+      icon: #
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      url: /categories/
+    - name: 标签
+      icon: #
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      url: /tags/
+    - name: 归档
+      icon: #
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
+      url: /archives/
+    - name: 友链
+      icon: #
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+      url: /archives/
+    - name: 关于
+      icon: #
+      img: https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+      url: #
+############################### Cover ############################### > end
+
+

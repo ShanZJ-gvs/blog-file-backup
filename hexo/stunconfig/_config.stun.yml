@@ -1,0 +1,158 @@
+#关闭搜索，在没有配置的情况下，无法生成index.html
+local_search:
+  enable: false
+
+header:
+  enable: true
+  show_on:
+    # 在文章页面是否显示网站顶部
+    post: false
+  # 网站顶部的高度（设置为百分数，表示所占屏幕高度的百分比。支持所有 CSS 长度单位）
+  height: 80%
+  # 顶部背景图片
+  bg_image:
+    enable: false
+    # 填写图片路径或链接
+    url:
+  # 顶部背景图的遮罩效果
+  mask:
+    enable: false
+    # 透明度（取值：0 ~ 1）
+    opacity: 0.5
+  nav:
+    # 顶部导航栏的高度（支持所有 CSS 长度单位）
+    height: 50px
+    # 导航栏的背景颜色（吸顶时）
+    bg_color: "#333"
+  # 提示向下滚动的图标
+  scroll_down_icon:
+    enable: false
+    # 查找图标名称，请访问：https://fontawesome.com/icons
+    name: fas fa-angle-down
+    # 是否启用动画
+    animation: true
+
+# The menu in the website header.
+# Value before `||` is the target link, value after `||` is the name of FontAwesome icon.
+# Usage(With Icon): `Key: /link/ || fa(s|r|l|d|b) fa-iconname`
+# Usage(No Icon)  : `Key: /link/`
+# Select your icon name, see: https://fontawesome.com/icons
+menu:
+  home: / || fas fa-home
+  archives: /archives/ || fas fa-folder-open
+  categories: /categories/ || fas fa-layer-group
+  tags: /tags/ || fas fa-tags
+  #二级菜单
+  #friends: javascript:; || fas fa-users
+  # You can add a secondary menu like follow.
+  # xxx1: javascript:; || fa(s|r|l|d|b) fa-xxx
+
+#二级菜单
+submenu:
+  friends:
+    aaa: /aaa/ || fas fa-male
+    bbb: /bbb/ || fas fa-female
+
+
+
+author:
+  enable: true
+  # 侧边栏头像
+  avatar:
+    # 填写图片路径或链接
+    url: http://cdn.gvssimux.com/touxiang.jpg
+    # 是否显示为圆形
+    rounded: true
+    # 头像透明度（取值：0 ~ 1）
+    opacity: 1
+    # 鼠标经过时的动画，可选值：turn 或 shake
+    animation: shake
+  # 格言（可以是任意一句想写的话）
+  motto: Everything is possible
+
+
+
+
+
+# Social links
+# Value before `||` is the target link, value after `||` is the name of FontAwesome icon.
+# Usage: `Key: /link/ || fa(s|r|l|d|b) fa-iconname`
+# Select your icon name, see: https://fontawesome.com/icons
+# If you can`t find a suitable icon, you can choose to display text by adding the `origin:` prefix.
+# e.g. `origin:sf`, so `sf` will be displayed.
+social:
+  github: https://github.com/ShanZJ-gvs || fab fa-github  
+  gitee: https://gitee.com/shanzj || origin:码
+  juejin: https://juejin.im/timeline || origin:掘  
+  #email: far fa-envelope
+  #google: https://plus.google.com/ || fab fa-google
+  #twitter: https://twitter.com/ || fab fa-twitter
+  #youtube: https://youtube.com/ || fab fa-youtube
+  # segmentfault: https://segmentfault.com/ || origin:sf
+  # weibo: https://weibo.com/ || fab fa-weibo
+  # zhihu: https://www.zhihu.com/ || origin:知
+  # wechat: yournumber || fab fa-weixin
+  # telegram: yournumber || fab fa-telegram
+  # qq: yournumber || fab fa-qq
+
+social_setting:
+  enable: true
+  # Only show by icon.
+  icon_only: true
+
+
+footer:
+  # 背景图片
+  bg_image:
+    enable: false
+    # 填写图片路径或链接
+    url: https://xxxxx.png
+  # 遮罩效果
+  mask:
+    enable: false
+    # 遮罩透明度 (取值: 0 ~ 1).
+    opacity: 0.5
+
+  # 版权信息
+  copyright:
+    enable: true
+    # 显示的文字信息，例如：xxx All Rights Reserved
+    # 如果不设置，将显示 Hexo 配置文件中 author 项的内容
+    text: Gvssimux All Rights Reserved
+    # 开始时间（如果不设置，将使用最新的年份）
+    since: 2019
+    # 结束时间（如果不设置，将使用最新的年份）
+    end: 2020
+
+  # 日期和版权之间的图标
+  icon:
+    enable: true
+    # 查找图标名称，请访问：https://fontawesome.com/icons
+    name: fas fa-heart
+    # 心跳动画
+    animation: false
+    # 请使用包裹值（支持所有 CSS 颜色单位）
+    color: "#0a3d62"
+
+  # Hexo 链接（Powered by Hexo）
+  powered:
+    enable: true
+    # 显示版本号（例如：vX.X.X）
+    version: true
+
+  # 主题链接（Theme - Stun）
+  theme:
+    enable: true
+    # 显示版本号（例如：vX.X.X）
+    version: true
+
+  # 备案信息（只有中国开发者会用到）详情: http://www.miitbeian.gov.cn/
+  beian:
+    enable: true
+    # 备案 XXXXXXXX 号
+    icp: 皖ICP备20003134
+  # 任何自定义文本，支持 HTML（例如：托管于 <a href="https://pages.github.com/" rel="noopener" target="_blank">Github Pages</a>）
+  custom:
+    enable: true
+    # 自定义文本内容
+    text: <a target="_blank" id="beiana" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34010202601247">皖公网安备 34010202601247号</a>
