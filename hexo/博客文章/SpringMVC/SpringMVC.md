@@ -1,12 +1,11 @@
 ---
 title: SpringMVC
-date: 2020-08-23
-updated: 2020-08-23
+date: 2020-08-09
+updated: 2020-08-09
 comments: false
 excerpt: SpringMVC学习笔记
 categories:
-  - Spring
-  - 框架
+  - [框架, SpringMVC]
 tags:
   - 框架
 ---

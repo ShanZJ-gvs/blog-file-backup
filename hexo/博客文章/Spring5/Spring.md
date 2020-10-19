@@ -1,12 +1,11 @@
 ---
 title: Spring5学习笔记
-date: 2020-8-17 14:35:44
-updated: 2020-8-17 14:35:44
+date: 2020-06-25 14:35:44
+updated: 2020-06-25 14:35:44
 comments: false
 excerpt: Spring makes Java simple.modern.productive.reactive.cloud-ready.
 categories:
-  - [框架]
-  - Spring
+  - [框架,Spring]
 tags:
   - 框架
 ---

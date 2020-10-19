@@ -1,3 +1,14 @@
+---
+title: SSM配置文件
+date: 2020-08-16
+updated: 2020-08-16
+comments: false
+excerpt: SSM配置文件
+categories:
+  - 框架
+tags:
+  - 框架
+---
 # 1、导入依赖
 
 ```xml
