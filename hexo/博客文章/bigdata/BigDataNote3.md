@@ -1,3 +1,18 @@
+---
+title: 大数据比赛环境搭建
+date: 2020-10-11 22:54:49
+updated: 2020-11-1 23:54:49
+comments: false
+excerpt: 本科大数据比赛的环境搭建，实测无坑
+categories:
+  - [本科]
+  - [LInux]
+  - [环境搭建]
+tags:
+  - 本科
+  - LInux
+  - 环境搭建
+---
 # 前言
 
 ## 环境
@@ -110,7 +125,7 @@ contab -e
 >
 > 也可自行百度如何卸除mysql
 
-![](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20201027181617.png)
+![](http://cdn.gvssimux.com/20201027181617.png)
 
 方法一：rpm -qa |grep -i mysql
 
@@ -191,7 +206,7 @@ rm -rf /var/lib/mysql
 
 [root@node01 ~]# rpm -e --nodeps mariadb-libs-5.5.65-1.el7.x86_64
 
-![](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20201027182434.png)
+![](http://cdn.gvssimux.com/20201027182434.png)
 
 
 
@@ -210,7 +225,7 @@ rm -rf /var/lib/mysql
 
 ```
 
-![](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20201027184416.png)
+![](http://cdn.gvssimux.com/20201027184416.png)
 
 执行完成后会在/etc/yum.repos.d/目录下生成两个repo文件mysql-community.repo mysql-community-source.repo
 
@@ -232,7 +247,7 @@ rm -rf /var/lib/mysql
 >
 > systemctl status mysqld #查看状态
 
-![](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20201027185134.png)
+![](http://cdn.gvssimux.com/20201027185134.png)
 
 **3、获取安装时的临时密码（在第一次登录时就是用这个密码）：**
 
@@ -590,7 +605,7 @@ node02
 
 node03
 
-![](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20201028145555.png)
+![](http://cdn.gvssimux.com/20201028145555.png)
 
 **配置好文件好复制hadoop目录到node02和node03机器**
 
@@ -676,7 +691,7 @@ export PATH=$JAVA_HOME/bin$PATH:$HADOOP_HOME/bin
 [root@node01 ~]# hadoop checknative
 ```
 
-![](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20201027171204.png)
+![](http://cdn.gvssimux.com/20201027171204.png)
 
 
 
@@ -864,9 +879,9 @@ mysql>exit;
 
 执行jps确认hadoop是否启动（三台机器都有确认）
 
-![image-20201029155822002](D:\Users\单子健\Desktop\大数据比赛\笔记\image\image-20201029155822002.png)
+![image-20201029155822002](http://cdn.gvssimux.com/image-20201029155822002.png)
 
-![image-20201029155835982](D:\Users\单子健\Desktop\大数据比赛\笔记\image\image-20201029155835982.png)
+![image-20201029155835982](http://cdn.gvssimux.com/image-20201029155835982.png)
 
 
 
@@ -908,7 +923,7 @@ PATH=$JAVA_HOME/bin$PATH:$HADOOP_HOME/bin:$HIVE_HOME/bin:$PYTHON_HOME/bin:$SCALA
 
 **其他节点也配置相同环境变量**
 
-![image-20201029171731974](D:\Users\单子健\Desktop\大数据比赛\笔记\image\image-20201029171731974.png)
+![image-20201029171731974](http://cdn.gvssimux.com/image-20201029171731974.png)
 
 ## 安装spark
 
@@ -926,7 +941,7 @@ export SPARK_HOME=/usr/service/spark-1.6.0-bin-hadoop2.6PATH=$JAVA_HOME/bin$PATH
 
 **3、修改spark配置文件(spark-env.sh、slaves)**
 
-![image-20201029201614506](D:\Users\单子健\Desktop\大数据比赛\笔记\image\image-20201029201614506.png)
+![image-20201029201614506](http://cdn.gvssimux.com/image-20201029201614506.png)
 
 **spark-env.sh**
 
@@ -946,7 +961,7 @@ export SCALA_HOME=/user/service/scala-2.11.0
 export SPARK_MASTER_IP=node01
 ```
 
-![image-20201029202422822](D:\Users\单子健\Desktop\大数据比赛\笔记\image\image-20201029202422822.png)
+![image-20201029202422822](http://cdn.gvssimux.com/image-20201029202422822.png)
 
 >node01主节点
 
@@ -966,7 +981,7 @@ export SPARK_MASTER_IP=node01
 
 添加从节点
 
-![image-20201029202833089](D:\Users\单子健\Desktop\大数据比赛\笔记\image\image-20201029202833089.png)
+![image-20201029202833089](http://cdn.gvssimux.com/image-20201029202833089.png)
 
 
 
@@ -993,7 +1008,7 @@ export SPARK_MASTER_IP=node01
 # $HADOOP_HOME/sbin/start-dfs.sh
 ```
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\clip_image006.jpg)
+![img](http://cdn.gvssimux.com/clip_image006.jpg)
 
 ```bash
 # $SPARK_HOME/sbin/start-all.sh
@@ -1008,9 +1023,9 @@ export SPARK_MASTER_IP=node01
 # $SPARK_HOME/bin/spark-submit --class org.apache.spark.examples.SparkPi --master spark://node01:7077 $SPARK_HOME/lib/spark-examples-1.6.0-hadoop2.6.0.jar
 ```
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\clip_image010.jpg)
+![img](http://cdn.gvssimux.com/clip_image010.jpg)
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\clip_image012.jpg)
+![img](http://cdn.gvssimux.com/clip_image012.jpg)
 
 最终在windows下的浏览器里面输入
 
@@ -1022,7 +1037,7 @@ http://[node01的ip]:50070
 
 http://[node01的ip]:8080
 
-![image-20201029211113890](D:\Users\单子健\Desktop\大数据比赛\笔记\image\image-20201029211113890.png)
+![image-20201029211113890](http://cdn.gvssimux.com/image-20201029211113890.png)
 
 # 安装python3.6.5.tgz(未整理)
 
@@ -1030,11 +1045,11 @@ https://blog.csdn.net/L_15156024189/article/details/84831045
 
 本文基于如下Linux系统版本：
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20181205135253731.png)
+![img](http://cdn.gvssimux.com/20181205135253731.png)
 
 1、默认情况下，Linux会自带安装Python，可以运行python --version命令查看，如图：
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20181205114121673.png)
+![img](http://cdn.gvssimux.com/20181205114121673.png)
 
 我们看到Linux中已经自带了Python2.7.5。再次运行python命令后就可以使用python命令窗口了（Ctrl+D退出python命令窗口）。
 
@@ -1042,17 +1057,17 @@ https://blog.csdn.net/L_15156024189/article/details/84831045
 
 2、查看Linux默认安装的Python位置
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20181205114638860.png)
+![img](http://cdn.gvssimux.com/20181205114638860.png)
 
 看到/usr/bin/python和/usr/bin/python2都是软链接，/usr/bin/python指向/usr/bin/python2，而/usr/bin/python2最终又指向/usr/bin/python2.7。所以运行python/python2/python2.7是一样的，如图：
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\watermV0L0x)
+![img](http://cdn.gvssimux.com/watermV0L0x)
 
 3、安装python3
 
 （1）登录https://www.python.org/downloads/source/，找到对应版本（我们以Python 3.6.5为例）如图：
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20181205140734407.png)
+![img](http://cdn.gvssimux.com/20181205140734407.png)
 
 下载[Python-3.6.5.tgz](https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz)
 
@@ -1060,13 +1075,13 @@ https://blog.csdn.net/L_15156024189/article/details/84831045
 
 将文件上传到Linux系统的某个目录下，根据自己情况上传，本例上传到了/root/tools目录下，如图：
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20181205141052576.png)
+![img](http://cdn.gvssimux.com/20181205141052576.png)
 
 （3）解压
 
 执行tar -zxvf Python-3.6.5.tgz命令，将文件解压到当前目录，如图：
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20181205131636273.png)
+![img](http://cdn.gvssimux.com/20181205131636273.png)
 
 （4）准备编译环境
 
@@ -1078,7 +1093,7 @@ yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel r
 
 安装python需要的依赖。成功后（Complete!），如图：
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHsize_16,color_FFFFFF,t_70)
+![img](http://cdn.gvssimux.com/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHsize_16,color_FFFFFF,t_70)
 
 如果python是3.7版本，还需要安装libffi-devel。整个编译过程1分钟左右。
 
@@ -1168,11 +1183,11 @@ make
 make install
 ```
 
- ![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMTUxNTYwMjQxODk=,size_16,color_FFFFFF,t_70)
+ ![img](http://cdn.gvssimux.com/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0xfMTUxNTYwMjQxODk=,size_16,color_FFFFFF,t_70)
 
 我们看到，同时安装了setuptools和pip工具。进入到/root/training/Python-3.6.5安装目录，如图：
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20181205132418781.png)
+![img](http://cdn.gvssimux.com/20181205132418781.png)
 
 （6）创建软链接
 
@@ -1183,11 +1198,11 @@ ln -s /usr/service/Python3/bin/python3 /usr/bin/python3
 ln -s /usr/service/Python3/bin/pip3 /usr/bin/pip3
 ```
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20181205134913739.png)
+![img](http://cdn.gvssimux.com/20181205134913739.png)
 
  此时，我们在命令窗口运行python3，如图：
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20181205134959464.png)
+![img](http://cdn.gvssimux.com/20181205134959464.png)
 
  安装成功！当然此时还是可以使用Python2.7.5版本（运行python/python2/python2.7即可）。
 
@@ -1213,7 +1228,7 @@ export PATH=$PYTHON_HOME/bin:$PATH
 # echo $PYTHON_HOME
 ```
 
-![img](D:\Users\单子健\Desktop\大数据比赛\笔记\image\20181205143055635.png)
+![img](http://cdn.gvssimux.com/20181205143055635.png)
 
 
 

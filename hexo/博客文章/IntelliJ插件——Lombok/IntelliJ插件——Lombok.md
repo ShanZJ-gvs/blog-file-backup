@@ -29,7 +29,6 @@ public class User {
     private String name;
     private String pwd;
 }
-
 ```
 
 
@@ -61,7 +60,9 @@ public class User {
        <version>1.18.12</version>
        <scope>provided</scope>
    </dependency>
+
    ```
+
 
 这里我使用的是Feb, 2020最新版（附[仓库地址](https://mvnrepository.com/artifact/org.projectlombok/lombok)）
 
