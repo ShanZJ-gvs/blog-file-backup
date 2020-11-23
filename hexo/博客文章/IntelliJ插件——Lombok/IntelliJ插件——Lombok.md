@@ -1,14 +1,13 @@
 ---
 title: IntelliJ插件——Lombok
-date: 2020/8/13 20:46:25
-updated: 2020/8/13 20:46:25
+date: 2020-8-13
+updated: 2020-8-13
 comments: false
 categories:
-  - 插件
+  - IDEA插件
 tags:
-  - 插件
+  - IDEA插件
 ---
-
 
 # IntelliJ插件——Lombok
 
