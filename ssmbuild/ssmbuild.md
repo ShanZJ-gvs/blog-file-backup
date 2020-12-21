@@ -165,7 +165,7 @@ com.shanzj
 
 ### database.properties
 
-mysql为8.0版本
+mysql为8.0版本  jdbc使用高于8.0
 
 ```text
 driver=com.mysql.cj.jdbc.Driver
@@ -174,13 +174,13 @@ user = root
 pwd = root
 ```
 
-mysql为5.7
+mysql为5.7 jdbc使用低于8.0
 
 ```text
-jdbc.driver=com.mysql.jdbc.Driver 
-jdbc.url=jdbc:mysql://localhost:3306/数据库? useSSL=true&useUnicode=true&characterEncoding=utf8 
-jdbc.username=root 
-jdbc.password=root
+jdbc.driver1=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://192.168.1.3:3306/bms?useSSL=false&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+jdbc.username=root
+jdbc.password=12345
 ```
 
 ### 编写Mybatis核心配置文件

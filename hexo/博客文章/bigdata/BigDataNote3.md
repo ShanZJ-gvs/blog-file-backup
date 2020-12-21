@@ -1236,7 +1236,7 @@ export PATH=$PYTHON_HOME/bin:$PATH
 
 
 
-#  使用pip3安装pip3 tensorflow 
+#  使用pip3安装tensorflow 
 
 https://blog.csdn.net/abc781cba/article/details/85229956
 
